@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    
+   
+    <script>
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://www.eliftech.com/school-task",
+  "method": "GET",
+  "headers": {
+    "content-type": "application/json",
+    "cache-control": "no-cache",
+  },
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});    
+ </script>   
+     <script>
+      var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://www.eliftech.com/school-task",
+  "method": "POST",
+  "headers": {
+    "content-type": "application/json",
+    "cache-control": "no-cache",
+  },
+  "processData": false,
+  "data": "{\r\n    \"id\": \"8c16d796f8814e94828420c4a7772d5e\",\r\n    \"results\": [11, 42, 0, 0, 42, 0]\r\n}\r\n"
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+    </script>
+</body>
+</html>
